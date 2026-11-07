@@ -135,3 +135,33 @@ def test_analyse_exceptions(monkeypatch):
     }
 
     assert saved["filename"] == "calendar_exception_summary.csv"
+def test_analyse_date_coverage():
+    calendar = pd.DataFrame({
+        "start_date": [
+            "20260101",
+            "20260315",
+            "invalid"
+        ],
+        "end_date": [
+            "20261231",
+            "20261030",
+            "invalid"
+        ]
+    })
+
+    result = gtfs_analysis.analyse_date_coverage(calendar)
+
+    assert result["earliest_calendar_start"] == "2026-01-01"
+    assert result["latest_calendar_end"] == "2026-12-31"
+
+
+def test_analyse_date_coverage_all_invalid():
+    calendar = pd.DataFrame({
+        "start_date": ["invalid", None],
+        "end_date": ["invalid", None]
+    })
+
+    result = gtfs_analysis.analyse_date_coverage(calendar)
+
+    assert result["earliest_calendar_start"] is None
+    assert result["latest_calendar_end"] is None
