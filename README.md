@@ -26,11 +26,27 @@ This project has two connected components:
 
 ## 1. GTFS Public Transport Analytics
 
+### Dashboard Visualizations
 
+The following visualizations summarize key findings from the Latvia GTFS timetable analysis.
+
+#### 1. Top Routes
+
+![Top Routes](docs/images/01_top_routes.png)
+
+#### 2. Hourly Scheduled Service
+
+![Hourly Scheduled Service](docs/images/03_hourly_service.png)
+
+#### 3. Geographic Distribution of Stops Across Latvia
+
+![Geographic Distribution of Stops](docs/images/07_latvia_stop_distribution.png)
+
+#### 4. GTFS Data Quality Validation
+
+![GTFS Data Quality](docs/images/10_data_quality.png)
 
 The GTFS analysis uses public transport timetable data published by Autotransporta direkcija (ATD).
-
-
 
 ### Analysis performed
 
@@ -451,6 +467,3 @@ See:
 
 
 This project demonstrates practical work with Python, data analysis, GTFS data processing, data visualization, data quality validation, NLP pipeline design, and interactive dashboard development.
-
-
-
