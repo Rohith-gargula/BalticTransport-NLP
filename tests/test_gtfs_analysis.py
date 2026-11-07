@@ -165,3 +165,41 @@ def test_analyse_date_coverage_all_invalid():
 
     assert result["earliest_calendar_start"] is None
     assert result["latest_calendar_end"] is None
+def test_analyse_routes(monkeypatch):
+    routes = pd.DataFrame({
+        "route_id": ["r1", "r2"],
+        "route_short_name": ["10", "20"],
+        "route_long_name": ["Central", "Airport"],
+        "route_type": [3, 3]
+    })
+
+    trips = pd.DataFrame({
+        "route_id": ["r1", "r1", "r1", "r2", "r3", "r3"]
+    })
+
+    saved_files = []
+
+    def fake_save_csv(df, filename):
+        saved_files.append((filename, len(df)))
+
+    monkeypatch.setattr(
+        gtfs_analysis, "save_csv", fake_save_csv
+    )
+
+    result = gtfs_analysis.analyse_routes(routes, trips)
+
+    assert result["route_id"].tolist() == ["r1", "r3", "r2"]
+    assert result["trip_count"].tolist() == [3, 2, 1]
+
+    labels = result.set_index("route_id")["route_label"].to_dict()
+
+    assert labels == {
+        "r1": "10 - Central",
+        "r3": "r3",
+        "r2": "20 - Airport"
+    }
+
+    assert saved_files == [
+        ("trips_per_route.csv", 3),
+        ("top_20_routes.csv", 3)
+    ]
