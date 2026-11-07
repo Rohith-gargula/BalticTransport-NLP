@@ -1,0 +1,44 @@
+{
+    "project": "BalticTransport-NLP",
+    "module": "GTFS Public Transport Analytics",
+    "dataset": "ATD Latvia GTFS",
+    "record_counts": {
+        "routes": 1022,
+        "stops": 10216,
+        "trips": 6430,
+        "stop_time_records": 108390,
+        "calendar_records": 6428,
+        "calendar_exceptions": 41159
+    },
+    "date_coverage": {
+        "earliest_calendar_start": "2026-01-01",
+        "latest_calendar_end": "2027-05-06"
+    },
+    "data_quality": {
+        "Duplicate route IDs": 0,
+        "Duplicate stop IDs": 0,
+        "Duplicate trip IDs": 0,
+        "Duplicate trip-stop-sequence records": 0,
+        "Trips referencing unknown routes": 0,
+        "Stop times referencing unknown trips": 0,
+        "Stop times referencing unknown stops": 0,
+        "Trips without any calendar definition": 0,
+        "Stops missing latitude": 0,
+        "Stops missing longitude": 0
+    },
+    "analytics": {
+        "routes_analysed": 1022,
+        "stops_analysed": 10216,
+        "service_hours_analysed": 28,
+        "weekday_categories": 7,
+        "route_types": 2,
+        "calendar_exception_types": 2
+    },
+    "limitations": [
+        "GTFS describes scheduled public transport services.",
+        "It does not provide actual vehicle positions.",
+        "It does not establish observed delays or punctuality.",
+        "Stop-event counts are timetable records, not passenger counts.",
+        "Calendar exceptions must be applied for date-specific service."
+    ]
+}

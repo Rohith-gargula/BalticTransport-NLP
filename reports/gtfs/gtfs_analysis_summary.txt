@@ -1,0 +1,46 @@
+BALTICTRANSPORT - GTFS ANALYTICS
+=======================================================
+
+DATASET RECORD COUNTS
+-------------------------------------------------------
+routes: 1,022
+stops: 10,216
+trips: 6,430
+stop_time_records: 108,390
+calendar_records: 6,428
+calendar_exceptions: 41,159
+
+CALENDAR DATE COVERAGE
+-------------------------------------------------------
+Earliest start: 2026-01-01
+Latest end: 2027-05-06
+
+DATA QUALITY
+-------------------------------------------------------
+Duplicate route IDs: 0
+Duplicate stop IDs: 0
+Duplicate trip IDs: 0
+Duplicate trip-stop-sequence records: 0
+Trips referencing unknown routes: 0
+Stop times referencing unknown trips: 0
+Stop times referencing unknown stops: 0
+Trips without any calendar definition: 0
+Stops missing latitude: 0
+Stops missing longitude: 0
+
+ANALYTICS SUMMARY
+-------------------------------------------------------
+Routes analysed: 1,022
+Stops analysed: 10,216
+Service hours analysed: 28
+Weekday categories: 7
+Route types: 2
+Calendar exception types: 2
+
+DATA LIMITATIONS
+-------------------------------------------------------
+- GTFS describes scheduled public transport services.
+- It does not provide actual vehicle positions.
+- It does not establish observed delays or punctuality.
+- Stop-event counts are timetable records, not passenger counts.
+- Calendar exceptions must be applied for date-specific service.

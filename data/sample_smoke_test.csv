@@ -1,0 +1,13 @@
+id,language,text,label,source,source_url,published_at,is_synthetic
+smoke-001,lv,Rīgas dzelzceļa infrastruktūras remontdarbi ietekmēs vilcienu kustību.,infrastructure,synthetic,,2026-01-01,true
+smoke-002,lv,Kravas vilciena kavēšanās ietekmēja piegādes grafiku.,delay,synthetic,,2026-01-02,true
+smoke-003,lv,Transporta uzņēmums ieviesa jaunus darba drošības noteikumus.,safety,synthetic,,2026-01-03,true
+smoke-004,lv,Kravu pārvadājumu tarifus plānots pārskatīt nākamajā mēnesī.,tariffs,synthetic,,2026-01-04,true
+smoke-005,ru,Ремонт железнодорожной инфраструктуры изменит расписание поездов.,infrastructure,synthetic,,2026-01-05,true
+smoke-006,ru,Грузовой поезд задержался и нарушил график доставки.,delay,synthetic,,2026-01-06,true
+smoke-007,ru,Компания обновила правила безопасности для работников транспорта.,safety,synthetic,,2026-01-07,true
+smoke-008,ru,Тарифы на грузовые перевозки пересмотрят в следующем месяце.,tariffs,synthetic,,2026-01-08,true
+smoke-009,en,Rail infrastructure maintenance will affect the passenger timetable.,infrastructure,synthetic,,2026-01-09,true
+smoke-010,en,A delayed freight train disrupted the delivery schedule.,delay,synthetic,,2026-01-10,true
+smoke-011,en,The transport operator introduced updated worker safety procedures.,safety,synthetic,,2026-01-11,true
+smoke-012,en,Freight tariffs are expected to be reviewed next month.,tariffs,synthetic,,2026-01-12,true
