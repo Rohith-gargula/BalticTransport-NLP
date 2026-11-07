@@ -102,3 +102,36 @@ def test_analyse_weekday_service(monkeypatch):
     }
 
     assert saved["filename"] == "weekday_service_summary.csv"
+def test_analyse_exceptions(monkeypatch):
+    exceptions = pd.DataFrame({
+        "exception_type": [1, 1, 2, 3, "invalid", None]
+    })
+
+    saved = {}
+
+    def fake_save_csv(df, filename):
+        saved["filename"] = filename
+
+    monkeypatch.setattr(
+        gtfs_analysis, "save_csv", fake_save_csv
+    )
+
+    result = gtfs_analysis.analyse_exceptions(exceptions)
+
+    counts = result.set_index("exception_type")[
+        "exception_count"
+    ].to_dict()
+
+    descriptions = result.set_index("exception_type")[
+        "exception_description"
+    ].to_dict()
+
+    assert counts == {1: 2, 2: 1, 3: 1}
+
+    assert descriptions == {
+        1: "Added service",
+        2: "Removed service",
+        3: "Unknown exception"
+    }
+
+    assert saved["filename"] == "calendar_exception_summary.csv"
