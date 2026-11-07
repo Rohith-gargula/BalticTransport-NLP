@@ -14,3 +14,24 @@ Before collecting/publishing each source:
 - [ ] Record source name, URL, access date, license/terms URL, and collection method.
 - [ ] Avoid personal data; remove irrelevant names/contact details where possible.
 - [ ] Respect rate limits and use a descriptive user-agent.
+## GTFS Public Transport Data
+
+**Official publisher:** VSIA Autotransporta direkcija (ATD)
+
+**Official source:** https://data.gov.lv/dati/eng/dataset/atd-gtfs
+
+**Official archive:** https://www.atd.lv/sites/default/files/GTFS/gtfs-latvia-lv.zip
+
+**Official source licence:** CC0 1.0 (as listed by the Latvian Open Data Portal).
+
+**Format:** General Transit Feed Specification (GTFS).
+
+**Geographical coverage:** Latvia.
+
+**Time zone:** Europe/Riga.
+
+**Project usage:** Route analysis, stop analysis, timetable analysis, service calendar analysis and data-quality assessment.
+
+**Provenance status:** Three of the ten project GTFS files matched the archived 2018 source byte-for-byte. Seven differed. The exact source version and redistribution rights of the project copy require further verification.
+
+**Important:** The CC0 licence of the official archive should not be assumed to cover every project file until its provenance is confirmed.
