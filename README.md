@@ -132,6 +132,22 @@ The Gradio dashboard contains seven sections:
 
 7. NLP Classification
 
+8. Bus Assistant
+
+Bus Assistant features:
+
+Search individual Riga bus and trolleybus route numbers.
+
+Distinguish between bus and trolleybus services.
+
+Explore scheduled route directions.
+
+Display interactive route maps.
+
+View available route and stop information.
+
+Note: The dashboard uses scheduled GTFS information, not live GPS vehicle tracking
+
 
 
 ## 2. Multilingual NLP Research
