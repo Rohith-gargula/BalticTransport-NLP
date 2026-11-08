@@ -4,7 +4,14 @@
 [▶ Watch the BalticTransport-NLP Demo Video](./BalticTransport-Demo.mp4)
 
 A demonstration of the Latvia public transport analytics dashboard, including route analysis, timetable analysis, data quality checks, and the NLP starter pipeline.
+Try the Live Interactive Dashboard
+https://huggingface.co/spaces/rohithgoudgargula/BalticTransport-NLP
 
+Open BalticTransport-NLP on Hugging Face
+
+Explore Riga bus and trolleybus routes, scheduled service information, and interactive route maps using the Bus Assistant.
+📊 Explore the Kaggle Notebook
+https://www.kaggle.com/code/rohithgoudgargula/baltictransport-nlp-latvia-gtfs-analytics-2026
 ---
 
 
