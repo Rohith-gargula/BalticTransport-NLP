@@ -488,7 +488,7 @@ See:
 
 - Add more transport analytics and visualizations.
 
-- Deploy the dashboard through a public hosting platform.
+- Enhance the deployed dashboard with additional route exploration and visualisation features.
 
 
 
